@@ -1,0 +1,24 @@
+#Ignorar modules
+node_modules/
+
+#archivos de entorno
+.env* .local
+
+# Otros archivos comunes a ignorar en React Native/Expo:
+.expo/
+web-build/
+*.jks
+*.p8
+*.keystore
+*.gradle
+.idea/
+.vs/
+.vscode/
+*.iml
+yarn-error.log
+npm-debug.log*
+pnpm-debug.log
+app/
+android/
+ios/
+build/
