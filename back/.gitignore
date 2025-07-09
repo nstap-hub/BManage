@@ -2,8 +2,11 @@
 node_modules/
 
 #archivos de entorno
+.env
+.env.local
 .env* .local
-
+#archivo de js para la transiplación
+dist/
 # Otros archivos comunes a ignorar en React Native/Expo:
 .expo/
 web-build/
