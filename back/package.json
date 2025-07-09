@@ -1,0 +1,33 @@
+{
+  "name": "back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "pnpm build && pnpm start",
+    "dev:watch": "rimraf dist && nodemon --exec ts-node src/index.ts",
+    "clean": "rimraf node_modules pnpm-lock.yaml && pnpm install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.1",
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "dotenv": "^17.0.1",
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "pg-pool": "^3.10.1",
+    "pg-promise": "^11.14.0"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.15.4",
+    "nodemon": "^3.1.10",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
